@@ -19,9 +19,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="circle navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-bordeaux border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ClassProject</a>
+                <a class="navbar-brand text-white " asp-area="" asp-controller="Home" asp-action="Index">ClassProject</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -29,10 +29,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home 1</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index2">Home 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index3">Home 3</a>
                         </li>
                     </ul>
                 </div>
@@ -41,14 +44,24 @@
     </header>
     <div class="container">
         <partial name="_CookieConsentPartial" />
+        <div class="jumbotron jumbotron-fluid">
+            <img src="~/img/IMG_1520.jpg" class="mr-3 img-thumbnail float-right" style="width:10%; height:10%" />
+            <div class="container">
+                <h1 class="display-4">Maarten Knapen</h1>
+                <p class="lead">Grote Spouwen</p>
+                Studie Nummer: <span style=color:#1A1A1D>666</span>
+            </div>
+        </div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted bg-bordeaux">
         <div class="container">
-            &copy; 2019 - ClassProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2019 - ClassProject - <a class="text-white" asp-area="" asp-controller="Home" asp-action="index">Index 1</a>
+            <a class="text-white" asp-area="" asp-controller="Home" asp-action="index2">Index 2</a>
+            <a class="text-white" asp-area="" asp-controller="Home" asp-action="index3">Index 3</a>
         </div>
     </footer>
 

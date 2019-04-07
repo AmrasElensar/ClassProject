@@ -1,8 +1,149 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page 1";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+<div class="container-fluid bg-grey round-borders">
+    <div class="col-md-10 offset-md-1">
+        <p>
+            Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl. Swab barque interloper chantey doubloon starboard grog black jack gangway rutters.
+            Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.
+            Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow's nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.
+        </p>
+
+        <p> Grapple loot bucko killick gun code of conduct no prey, no pay belaying pin matey dead men tell no tales. Haul wind fathom Letter of Marque fire ship fore topmast Buccaneer stern piracy bring a spring upon her cable. Bring a spring upon her cable clipper belay Sea Legs Yellow Jack deadlights strike colors Barbary Coast pressgang topmast.</p>
+    </div>
+
+    <div class="col-md-10 offset-md-1">
+        <ol start="7">
+            <li>
+                <p>
+                    <strong>
+                        Maak een genummerde lijst waarin je uitlegt wat de betekenis is van ieder van de volgende begrippen:
+                        TCP, IP-adres, DNS, router, webserver, HTML, HTML tag. Als dit begrip een afkorting is geef je eerste de volledige naam, en op een nieuwe regel de betekenis. Dit wordt dus geen nieuw lijstnummer.
+                    </strong>
+                </p>
+                <ol>
+                    <li><strong>TCP/IP address</strong></li>
+                    <p>
+                        Internet Protocol (IP), dit is verantwoordelijk voor adressering van computer naar computer.
+                        Transmission Control Protocol (TCP), dit is verantwoordelijk voor besturing en verificatie van gegevens.
+                    </p>
+                    <li><strong>DNS</strong></li>
+                    <p>
+                        Een IP-adres is lastig te onthouden voor mensen
+                        Domeinnamen worden omgezet in IP-adressen
+                        Domain Name Servers (DNS)
+                        Bijvoorbeeld: www.google.nl = 74.125.79.147
+                    </p>
+                    <li><strong>router</strong></li>
+                    <p>
+                        Een router (uitspraak: Brits: roeter, Amerikaans: rauter) is een apparaat dat twee of meer verschillende computernetwerken aan elkaar verbindt, bijvoorbeeld internet en een bedrijfsnetwerk, en pakketten data van het ene naar het andere netwerk verzendt. Een router kan gezien worden als een schakelapparaat voor datapakketten dat actief is op OSI-laag 3. Dit in tegenstelling tot een hub, die op laag 1 werkt en een switch, die opereert op OSI-laag 2. Een router wordt beschouwd als een uitvoerapparaat.
+                    </p>
+                    <li><strong>Webserver</strong></li>
+                    <p>
+                        Een webserver is een programma dat via een netwerk HTTP-verzoeken ontvangt en documenten naar de client stuurt. Als totum pro parte wordt in het dagelijks spraakgebruik ook wel de hele computer die de betreffende software uitvoert als webserver aangeduid.
+                        Het Engelse begrip server betekent zoveel als "dienstverlener". De dienst, het leveren van documenten, wordt doorgaans verleend aan webbrowsers. De verzoeken aan een webserver moeten niet noodzakelijkerwijs via een fysiek netwerk gesteld worden, een dergelijke communicatie kan ook binnen één en dezelfde computer plaatsvinden.
+                        De documenten die door een webserver geleverd worden, kunnen uit verschillende bronnen komen: het kunnen bestanden op een opslagmedium zijn, maar het kan ook uitvoer van andere computerprogramma's zijn die bijvoorbeeld databases raadplegen om ter plekke een document voor de client samen te stellen. De webserver kan daarbij met andere computerprogramma's communiceren via bijvoorbeeld CGI.
+                        Apache, IIS en nginx zijn de drie meest gebruikte webservers.
+                    </p>
+                    <li><strong>HTML</strong></li>
+                    <p>
+                        HyperText Markup Language (afgekort HTML) is een op SGML gebaseerde opmaaktaal voor de specificatie van documenten, voornamelijk bedoeld voor het wereldwijde web. Het is de standaard opmaaktaal voor webpagina's. Documenten in HTML kunnen geopend en gelezen worden door een webbrowser om vervolgens als webpagina weergegeven te worden. HTML-documenten bevatten op de eerste plaats semantische structuur en tekstuele inhoud van een webpagina; de opmaak en visuele weergave kunnen er ook in worden beschreven, maar daar wordt tegenwoordig gewoonlijk CSS voor gebruikt.
+                    </p>
+                    <li><strong>HTML tag</strong></li>
+                    <p>
+                        Een voor de lezer onzichtbare code in een HTML-document, omsloten door een "<" en een ">"
+                    </p>
+                </ol>
+            </li>
+            <li>
+                <strong>Hoe weet een browser wat voor soort bestand door de server wordt geretourneerd?</strong>
+                <p>
+                    De browser weet via content-type welk soort bestand wordt gestuurd.
+                    Vb: text/html of image/gif
+                    Een webbrowser kan a.d.h.v. content-type het juiste scherm opbouwen.
+                </p>
+            </li>
+            <li>
+                <strong>Maak een tabel met informatie over browsers.</strong>
+                <p>
+                    <table class="table bg-pink round-borders text-white">
+                        <thead class="bg-red txt-black">
+                            <tr>
+                                <th>Naam</th>
+                                <th>Fabrikant</th>
+                                <th>Jaar van verschijnen</th>
+                                <th>Huidig versienummer</th>
+                                <th>Link</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Google Chrome</td>
+                                <td>Google Inc.</td>
+                                <td>Eerste Beta in 2008</td>
+                                <td>73.0.3683.86</td>
+                                <td><a class="btn btn-outline-info" target="_blank" href=https://support.google.com/chrome/answer/95346?co=GENIE.Platform%3DDesktop&hl=nl>Download </a></td>
+                            </tr>
+                            <tr>
+                                <td>FireFox</td>
+                                <td>Mozilla</td>
+                                <td>2004</td>
+                                <td>66.0.1</td>
+                                <td><a class="btn btn-outline-info" target="_blank" href=https://www.mozilla.org/nl/firefox/new />Download </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </li>
+            <li>
+                <p><strong>Wat is het doel van keywords? Wie of wat gebruikt deze?</strong></p>
+                <p>
+                    Het was de bedoeling dat zoekmachines aan de hand van deze tags betere resultaten zouden opleveren.
+                    De makers van websites gaven echter op grote schaal valse of irrelevante metatags op,
+                    bijvoorbeeld populaire zoektermen die niets met de pagina zelf te maken hebben,
+                    zodat zoekmachines op een slimmere manier moesten bepalen hoe relevant een website is.
+                    De laatste tijd zijn metatags echter weer meer in gebruik.
+                    Zo neemt bijvoorbeeld Google de description-tag een-op-een over en dat kan weer bijzonder handig zijn voor websites
+                    met weinig tekst-inhoud. De tekst in de 'description' moet echter wel als leesbare tekst
+                    op de pagina staan. Dit laatste geldt overigens óók voor de metatags 'title' en 'keywords'.
+                    Metatags en metadata hebben ook een mogelijke toepassing binnen het semantisch web.
+                    Daarnaast biedt Google de mogelijkheid om twee verschillende HTML-scripts aan te maken om de indexering door de zoekrobot te optimaliseren en dus de vindbaarheid te vergroten.
+                    Deze scripts worden aangemaakt in een (gratis) aan te maken Google-account en bestaan uit een code gebaseerd op de aanwezigheid van een sitemap en als tweede code een 'trackercode' (Google Analytics).
+                </p>
+            </li>
+            <li>
+                <p><strong>Wat is het doel van een description? Waar zal deze, wanneer je je site publiceert, te zien zijn?</strong></p>
+                <p>
+                    Deze tag geeft aan of een pagina mag worden opgenomen in de index van een zoekmachine (noindex om niet te worden opgenomen)
+                    en of de weblinks op de pagina gevolgd mogen worden
+                    (voor een hogere notering bij sommige zoekmachines van deze pagina’s nuttig, nofollow indien ongewenst).
+                    De vormen follow en index worden door zoekmachines genegeerd.
+                </p>
+            </li>
+            <li>
+                <p><strong>Klik in je browser met je rechter muisknop op je pagina, en kies ‘Paginabron weergeven’ (of Ctrl+U). Wat zie je? </strong></p>
+                <p>De bron-code van de pagina, oftewel de html opmaak.</p>
+            </li>
+            <li>
+                <p><strong>Klik op dezelfde wijze, en selecteer ‘Element inspecteren’ (of Ctrl+Shift+I). Beweeg met je muis over het scherm. Wat zie je? Wat is het nut hiervan?</strong></p>
+                <p>
+                    Adhv dit tool kan je live html inspecteren en aanpassen. Door de code te lezen/aan te passen kan je veel leren over html, CSS en javascript.
+                </p>
+            </li>
+            <li>
+                <p><strong>Maak een afbeelding van je browser wanneer je een element inspecteert en sla deze op als JPG-bestand in je images-map. Voeg deze afbeelding vervolgens op je pagina toe. </strong></p>
+                <p class="col-md-8"><img width="300" src="img/inspectElement.png" alt="Hier illustreer ik hoe je een DOM-element inspecteert via de browser." /></p>
+            </li>
+            <li>
+                <p><strong>Wanneer ziet de gebruiker de beschrijving in het alt-attribuut van een image?</strong></p>
+                <p>
+                    De alt-tag zie je als de afbeelding niet kan worden geladen of wanneer een 'screen-reader' wordt gebruikt.
+                </p>
+            </li>
+
+        </ol>
+    </div>
 </div>

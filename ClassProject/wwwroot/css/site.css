@@ -1,6 +1,137 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.container-overlay {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 300px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 0.25rem;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    padding: 0.25rem;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    margin: auto;
+    position: absolute;
+    top: auto;
+    left: auto;
+    transform: translate(-50%, -250%);
+    /*-ms-transform: translate(40%, -50%);*/
+}
+
+.container-overlay:hover .image {
+    opacity: 0.3;
+}
+
+.container-overlay:hover .middle {
+    opacity: 1;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px #dedede;
+}
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+                color: #aaa;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin: 0 10px;
+            }
+
+                nav ul li a,
+                nav ul li a:after,
+                nav ul li a:before {
+                    transition: all .5s;
+                }
+
+                    nav ul li a:hover {
+                        color: #4E4E50;
+                    }
+
+    /* Circle */
+    nav.circle ul li a {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        nav.circle ul li a:after {
+            display: block;
+            position: absolute;
+            margin: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: '.';
+            color: transparent;
+            width: 1px;
+            height: 1px;
+            border-radius: 50%;
+            background: transparent;
+        }
+
+        nav.circle ul li a:hover:after {
+            -webkit-animation: circle 1.5s ease-in forwards;
+        }
+
+/* Keyframes */
+@-webkit-keyframes circle {
+    0% {
+        width: 1px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        height: 1px;
+        z-index: -1;
+        background: #950740;
+        border-radius: 100%;
+    }
+
+    100% {
+        background: #C3073F;
+        height: 5000%;
+        width: 5000%;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+    }
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -53,4 +184,97 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
+}
+
+.col-4-img {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-2-img {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.blog-bg-grey {
+    background-color: grey;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.blog-bg-lightgrey {
+    background-color: lightgray;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.blog-bg-pink {
+    background-color: #950740;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.blog-bg-red {
+    background-color: #C3073F;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.datecolor {
+    color: #1A1A1D;
+}
+
+.bg-bordeaux {
+    background-color: #6F2232 !important;
+}
+
+.bg-pink {
+    background-color: #950740 !important;
+}
+
+.bg-black {
+    background-color: #1A1A1D !important;
+}
+
+.bg-grey {
+    background-color: #4E4E50 !important;
+}
+
+.bg-red {
+    background-color: #C3073F !important;
+}
+
+.round-borders {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-radius: 0.3rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.txt-black {
+    color: #1A1A1D !important;
+}
+
+.txt-red {
+    color: #C3073F;
 }
